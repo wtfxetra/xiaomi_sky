@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote
+    name="github"
+    fetch="https://github.com/" />
+
+  
+  <!-- Device tree -->
+  <project
+      name="DerpFest-Devices/device_xiaomi_sky"
+      path="device/xiaomi/sky" />
+
+
+
+<!-- kernel tree  -->
+<project
+    name="DerpFest-Devices/device_xiaomi_sky-kernel"
+    path="kernel/xiaomi/sky-kernel" />
+    
+  
+
+  <!-- Vendor  -->
+  <project
+      name="DerpFest-Devices/vendor_xiaomi_sky"
+      path="vendor/xiaomi/sky"
+      remote="github" />
+
+ 
+  
+</manifest>
