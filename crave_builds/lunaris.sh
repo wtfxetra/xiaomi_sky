@@ -7,7 +7,7 @@ export TZ=Asia/Kolkata
 export BUILD_USERNAME==wtfxetra
 export BUILD_HOSTNAME=crave
 
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.1 --git-lfs
+repo init -u https://github.com/Lunaris-AOSP/android -b 16 --git-lfs
 
 repo sync -c -j"$(nproc --all)" --force-sync --no-clone-bundle --no-tags || /opt/crave/resync.sh
 # for safe sync
@@ -24,8 +24,6 @@ git clone https://github.com/sm4450-development/device_xiaomi_sky-kernel device/
 
 . build/envsetup.sh
 
-gk -s
+lunch lineage_sky-bp2a-user
 
-axion sky pico
-axionSync
-ax -br -j$(nproc --all)
+m lunaris
